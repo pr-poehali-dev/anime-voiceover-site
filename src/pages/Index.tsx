@@ -51,8 +51,8 @@ const Index = () => {
     const titleLower = anime.title.toLowerCase();
     
     const matchesSearch = titleLower.includes(searchLower) || 
-                         (titleLower === 'gachiakuta' && searchLower.includes('гачиакута')) ||
-                         (titleLower === 'dandadan' && searchLower.includes('дандадан'));
+                         (titleLower === 'gachiakuta' && 'гачиакута'.includes(searchLower)) ||
+                         (titleLower === 'dandadan' && 'дандадан'.includes(searchLower));
     
     const matchesGenre = selectedGenre === 'all' || anime.genre === selectedGenre;
     const matchesTab = activeTab === 'all' || 
