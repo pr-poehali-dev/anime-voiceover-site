@@ -110,11 +110,13 @@ const Index = () => {
           <div className="text-center space-y-6 animate-fade-in">
             <div className="mb-8">
               <h1 className="text-6xl md:text-8xl font-black tracking-wider mb-2" style={{
-                fontFamily: "'Bebas Neue', sans-serif",
-                textShadow: '0 0 20px rgba(128, 0, 0, 0.8), 0 0 40px rgba(128, 0, 0, 0.6), 0 0 60px rgba(128, 0, 0, 0.4)',
+                fontFamily: "'Black Ops One', cursive",
+                textShadow: '0 0 20px rgba(128, 0, 0, 0.9), 0 0 40px rgba(128, 0, 0, 0.7), 0 0 60px rgba(128, 0, 0, 0.5), 4px 4px 0px #000000, -2px -2px 0px rgba(220, 38, 38, 0.5)',
                 letterSpacing: '0.15em',
                 color: '#DC2626',
-                WebkitTextStroke: '2px #800000'
+                WebkitTextStroke: '1px #800000',
+                transform: 'skewY(-2deg)',
+                filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8))'
               }}>
                 BEBRADUB
               </h1>
