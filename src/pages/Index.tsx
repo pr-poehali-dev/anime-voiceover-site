@@ -21,60 +21,23 @@ interface AnimeProject {
 const animeData: AnimeProject[] = [
   {
     id: 1,
-    title: 'Тёмный Путь Героя',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d42d1ca7-1fb6-4234-b011-133cf290653a.jpg',
-    genre: 'Экшен',
-    year: 2024,
+    title: 'GACHIAKUTA',
+    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d63761bd-95d0-4e5b-a1ea-b501f8afbbde.jpg',
+    genre: 'Сёнен, Экшн',
+    year: 2025,
     episodes: 24,
-    status: 'completed'
+    status: 'ongoing',
+    progress: 15
   },
   {
     id: 2,
-    title: 'Кровавые Сумерки',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/33da7c6f-ca8b-41a5-bbff-10a8d2332256.jpg',
-    genre: 'Фэнтези',
-    year: 2024,
-    episodes: 12,
-    status: 'ongoing',
-    progress: 65
-  },
-  {
-    id: 3,
-    title: 'Легенда Алого Меча',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/12470088-143e-46a6-9832-b6879af65496.jpg',
-    genre: 'Приключения',
-    year: 2023,
-    episodes: 36,
-    status: 'completed'
-  },
-  {
-    id: 4,
-    title: 'Восставший из Тьмы',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d42d1ca7-1fb6-4234-b011-133cf290653a.jpg',
-    genre: 'Триллер',
-    year: 2024,
-    episodes: 13,
-    status: 'ongoing',
-    progress: 38
-  },
-  {
-    id: 5,
-    title: 'Демоны Полуночи',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/33da7c6f-ca8b-41a5-bbff-10a8d2332256.jpg',
-    genre: 'Ужасы',
-    year: 2023,
+    title: 'GACHIAKUTA',
+    image: 'https://cdn.poehali.dev/files/Снимок экрана 2025-12-13 140657.png',
+    genre: 'Сёнен, Экшн',
+    year: 2025,
     episodes: 24,
-    status: 'completed'
-  },
-  {
-    id: 6,
-    title: 'Последний Дракон',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/12470088-143e-46a6-9832-b6879af65496.jpg',
-    genre: 'Фэнтези',
-    year: 2024,
-    episodes: 12,
     status: 'ongoing',
-    progress: 50
+    progress: 15
   }
 ];
 
@@ -83,7 +46,7 @@ const Index = () => {
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
   const [activeTab, setActiveTab] = useState('all');
 
-  const genres = ['all', 'Экшен', 'Фэнтези', 'Приключения', 'Триллер', 'Ужасы'];
+  const genres = ['all', 'Сёнен, Экшн'];
 
   const filteredAnime = animeData.filter(anime => {
     const matchesSearch = anime.title.toLowerCase().includes(searchQuery.toLowerCase());
