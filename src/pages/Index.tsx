@@ -124,11 +124,11 @@ const Index = () => {
                 BEBRADUB
               </h1>
             </div>
-            <Badge variant="outline" className="border-primary text-primary px-4 py-1.5 text-sm font-semibold">
-              ПРОФЕССИОНАЛЬНАЯ ОЗВУЧКА
-            </Badge>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Студия профессиональной озвучки аниме. Качество, скорость, стиль.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl mx-auto italic">
+              Делаем что по кайфу, рады если будете с нами)
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
@@ -137,7 +137,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold px-8">
                 <Icon name="Mail" className="mr-2" size={20} />
-                Заказать озвучку
+                Связаться с нами
               </Button>
             </div>
           </div>
