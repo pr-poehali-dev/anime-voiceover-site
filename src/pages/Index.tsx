@@ -22,17 +22,7 @@ const animeData: AnimeProject[] = [
   {
     id: 1,
     title: 'GACHIAKUTA',
-    image: 'https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d63761bd-95d0-4e5b-a1ea-b501f8afbbde.jpg',
-    genre: 'Сёнен, Экшн',
-    year: 2025,
-    episodes: 24,
-    status: 'ongoing',
-    progress: 15
-  },
-  {
-    id: 2,
-    title: 'GACHIAKUTA',
-    image: 'https://cdn.poehali.dev/files/Снимок экрана 2025-12-13 140657.png',
+    image: 'https://cdn.poehali.dev/files/7e03ab3337.jpg',
     genre: 'Сёнен, Экшн',
     year: 2025,
     episodes: 24,
