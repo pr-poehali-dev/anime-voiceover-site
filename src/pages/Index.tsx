@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -40,6 +41,7 @@ const animeData: AnimeProject[] = [
 ];
 
 const Index = () => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
   const [activeTab, setActiveTab] = useState('all');
@@ -137,6 +139,7 @@ const Index = () => {
                   <Card 
                     key={anime.id} 
                     className="group bg-card border-border overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer"
+                    onClick={() => navigate(`/anime/${anime.title.toLowerCase()}`)}
                   >
                     <div className="relative aspect-[2/3] overflow-hidden">
                       <img
