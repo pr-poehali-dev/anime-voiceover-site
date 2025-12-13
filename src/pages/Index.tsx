@@ -132,8 +132,13 @@ const Index = () => {
                 <Icon name="Play" className="mr-2" size={20} />
                 Смотреть работы
               </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold px-8">
-                <Icon name="Mail" className="mr-2" size={20} />
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary/10 font-semibold px-8"
+                onClick={() => window.open('https://t.me/bebradub', '_blank')}
+              >
+                <Icon name="Send" className="mr-2" size={20} />
                 Связаться с нами
               </Button>
             </div>
