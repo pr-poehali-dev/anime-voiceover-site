@@ -119,17 +119,6 @@ const Index = () => {
                 className="pl-10 bg-card border-border"
               />
             </div>
-            <select
-              value={selectedGenre}
-              onChange={(e) => setSelectedGenre(e.target.value)}
-              className="px-4 py-2 bg-card border border-border rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-            >
-              {genres.map((genre) => (
-                <option key={genre} value={genre}>
-                  {genre === 'all' ? 'Все жанры' : genre}
-                </option>
-              ))}
-            </select>
           </div>
 
           <div className="w-full">
