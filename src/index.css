@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Bebas+Neue&family=Rubik:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 25% 10%;
+    --background: 0 0% 5%;
     --foreground: 0 0% 100%;
 
-    --card: 220 20% 14%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 20% 14%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 262 83% 58%;
+    --primary: 0 75% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 291 64% 42%;
+    --secondary: 0 95% 27%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 70%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 25 95% 53%;
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 262 83% 58%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 75% 30%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 220 20% 12%;
+    --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary: 0 75% 30%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent: 0 0% 15%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 262 83% 58%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 75% 30%;
   }
 }
 
@@ -63,6 +63,9 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 }
