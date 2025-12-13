@@ -184,26 +184,13 @@ const Index = () => {
 
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-center md:text-left">
-              <h3 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                BEBRADUB
-              </h3>
-              <p className="text-sm text-muted-foreground mt-1">
-                Студия озвучки аниме
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Icon name="Youtube" size={20} />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Icon name="Send" size={20} />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Icon name="Mail" size={20} />
-              </Button>
-            </div>
+          <div className="text-center space-y-2">
+            <h3 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              BEBRADUB
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Студия озвучки аниме
+            </p>
           </div>
           <div className="text-center text-sm text-muted-foreground mt-8 pt-8 border-t border-border">
             © 2024 BebraDub. Все права защищены.
