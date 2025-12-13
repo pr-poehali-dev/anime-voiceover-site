@@ -46,6 +46,13 @@ const Index = () => {
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
   const [activeTab, setActiveTab] = useState('all');
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const genres = ['all', 'Сёнен, Экшн', 'Сёнен, Комедия'];
 
   const filteredAnime = animeData.filter(anime => {
@@ -97,7 +104,11 @@ const Index = () => {
               Делаем что по кайфу, рады если будете с нами)
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
+                onClick={scrollToProjects}
+              >
                 <Icon name="Play" className="mr-2" size={20} />
                 Смотреть работы
               </Button>
@@ -115,7 +126,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div id="projects-section" className="container mx-auto px-4 py-12">
         <div className="mb-8 space-y-6">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="relative flex-1">
