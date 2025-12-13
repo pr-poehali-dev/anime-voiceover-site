@@ -47,7 +47,13 @@ const Index = () => {
   const genres = ['all', 'Сёнен, Экшн', 'Сёнен, Комедия'];
 
   const filteredAnime = animeData.filter(anime => {
-    const matchesSearch = anime.title.toLowerCase().includes(searchQuery.toLowerCase());
+    const searchLower = searchQuery.toLowerCase();
+    const titleLower = anime.title.toLowerCase();
+    
+    const matchesSearch = titleLower.includes(searchLower) || 
+                         (titleLower === 'gachiakuta' && searchLower.includes('гачиакута')) ||
+                         (titleLower === 'dandadan' && searchLower.includes('дандадан'));
+    
     const matchesGenre = selectedGenre === 'all' || anime.genre === selectedGenre;
     const matchesTab = activeTab === 'all' || 
                        (activeTab === 'ongoing' && anime.status === 'ongoing') ||
