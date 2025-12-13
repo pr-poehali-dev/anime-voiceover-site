@@ -99,25 +99,28 @@ const Index = () => {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d63761bd-95d0-4e5b-a1ea-b501f8afbbde.jpg"
+            src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-13 140657.png"
             alt="Background"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
         </div>
         
         <div className="relative container mx-auto px-4 py-16 md:py-24">
           <div className="text-center space-y-6 animate-fade-in">
-            <div className="mb-8">
-              <h1 className="text-6xl md:text-8xl font-black tracking-wider mb-2" style={{
-                fontFamily: "'Black Ops One', cursive",
-                textShadow: '0 0 20px rgba(128, 0, 0, 0.9), 0 0 40px rgba(128, 0, 0, 0.7), 0 0 60px rgba(128, 0, 0, 0.5), 4px 4px 0px #000000, -2px -2px 0px rgba(220, 38, 38, 0.5)',
-                letterSpacing: '0.15em',
-                color: '#DC2626',
-                WebkitTextStroke: '1px #800000',
-                transform: 'skewY(-2deg)',
-                filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8))'
-              }}>
+            <div className="mb-8 flex justify-center">
+              <h1 
+                className="glitch-text text-6xl md:text-8xl font-black tracking-wider mb-2" 
+                data-text="BEBRADUB"
+                style={{
+                  fontFamily: "'Black Ops One', cursive",
+                  textShadow: '0 0 20px rgba(128, 0, 0, 0.9), 0 0 40px rgba(128, 0, 0, 0.7), 0 0 60px rgba(128, 0, 0, 0.5), 4px 4px 0px #000000',
+                  letterSpacing: '0.15em',
+                  color: '#DC2626',
+                  WebkitTextStroke: '1px #800000',
+                  filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8))'
+                }}
+              >
                 BEBRADUB
               </h1>
             </div>
