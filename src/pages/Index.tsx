@@ -97,19 +97,36 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-background to-background" />
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzgwMDAwMCIgc3Ryb2tlLXdpZHRoPSIuNSIgb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] opacity-30" />
+        <div className="absolute inset-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/e0a5c4c0-9e43-4139-84d3-055d4e54e00d/files/d63761bd-95d0-4e5b-a1ea-b501f8afbbde.jpg"
+            alt="Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+        </div>
         
         <div className="relative container mx-auto px-4 py-16 md:py-24">
           <div className="text-center space-y-6 animate-fade-in">
+            <div className="mb-8">
+              <h1 className="text-6xl md:text-8xl font-black tracking-wider mb-2" style={{
+                fontFamily: "'Bebas Neue', sans-serif",
+                textShadow: '0 0 20px rgba(128, 0, 0, 0.8), 0 0 40px rgba(128, 0, 0, 0.6), 0 0 60px rgba(128, 0, 0, 0.4)',
+                letterSpacing: '0.15em',
+                color: '#DC2626',
+                WebkitTextStroke: '2px #800000'
+              }}>
+                BEBRADUB
+              </h1>
+            </div>
             <Badge variant="outline" className="border-primary text-primary px-4 py-1.5 text-sm font-semibold">
               ПРОФЕССИОНАЛЬНАЯ ОЗВУЧКА
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 ANIME VOICE
               </span>
-            </h1>
+            </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Студия профессиональной озвучки аниме. Качество, скорость, стиль.
             </p>
