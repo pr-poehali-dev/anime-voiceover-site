@@ -122,11 +122,6 @@ const Index = () => {
             <Badge variant="outline" className="border-primary text-primary px-4 py-1.5 text-sm font-semibold">
               ПРОФЕССИОНАЛЬНАЯ ОЗВУЧКА
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                ANIME VOICE
-              </span>
-            </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Студия профессиональной озвучки аниме. Качество, скорость, стиль.
             </p>
