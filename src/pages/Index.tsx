@@ -124,9 +124,6 @@ const Index = () => {
                 BEBRADUB
               </h1>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Студия профессиональной озвучки аниме. Качество, скорость, стиль.
-            </p>
             <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl mx-auto italic">
               Делаем что по кайфу, рады если будете с нами)
             </p>
