@@ -26,8 +26,16 @@ const animeData: AnimeProject[] = [
     genre: 'Сёнен, Экшн',
     year: 2025,
     episodes: 24,
-    status: 'ongoing',
-    progress: 15
+    status: 'completed'
+  },
+  {
+    id: 2,
+    title: 'DanDaDan',
+    image: 'https://cdn.poehali.dev/files/080f3dd04b6ba2190db80d1281e38c6e.jpg',
+    genre: 'Сёнен, Комедия',
+    year: 2024,
+    episodes: 24,
+    status: 'completed'
   }
 ];
 
@@ -36,7 +44,7 @@ const Index = () => {
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
   const [activeTab, setActiveTab] = useState('all');
 
-  const genres = ['all', 'Сёнен, Экшн'];
+  const genres = ['all', 'Сёнен, Экшн', 'Сёнен, Комедия'];
 
   const filteredAnime = animeData.filter(anime => {
     const matchesSearch = anime.title.toLowerCase().includes(searchQuery.toLowerCase());
@@ -142,22 +150,6 @@ const Index = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="absolute top-3 right-3">
-                        <Badge variant={anime.status === 'completed' ? 'default' : 'secondary'} className="bg-primary/90 backdrop-blur-sm">
-                          {anime.status === 'completed' ? 'Завершено' : 'В работе'}
-                        </Badge>
-                      </div>
-                      {anime.status === 'ongoing' && anime.progress && (
-                        <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                          <div className="space-y-2">
-                            <div className="flex justify-between text-xs text-foreground font-semibold">
-                              <span>Прогресс озвучки</span>
-                              <span>{anime.progress}%</span>
-                            </div>
-                            <Progress value={anime.progress} className="h-2 bg-muted" />
-                          </div>
-                        </div>
-                      )}
                     </div>
                     <CardContent className="p-4 space-y-2">
                       <h3 className="font-bold text-lg line-clamp-1 group-hover:text-primary transition-colors">
