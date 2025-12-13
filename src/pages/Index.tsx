@@ -173,68 +173,15 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="bg-card border-t border-border py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <div className="space-y-4">
-              <Badge variant="outline" className="border-primary text-primary">
-                СОТРУДНИЧЕСТВО
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold">
-                Закажите озвучку
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                Профессиональная озвучка аниме с опытными актёрами и студией звукозаписи
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-6 py-8">
-              <div className="space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Icon name="Mic" className="text-primary" size={24} />
-                </div>
-                <h3 className="font-bold">Качество</h3>
-                <p className="text-sm text-muted-foreground">Профессиональное студийное оборудование</p>
-              </div>
-              <div className="space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Icon name="Zap" className="text-primary" size={24} />
-                </div>
-                <h3 className="font-bold">Скорость</h3>
-                <p className="text-sm text-muted-foreground">Быстрые сроки выполнения заказов</p>
-              </div>
-              <div className="space-y-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                  <Icon name="Users" className="text-primary" size={24} />
-                </div>
-                <h3 className="font-bold">Команда</h3>
-                <p className="text-sm text-muted-foreground">Опытные актёры озвучки</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 font-semibold px-8">
-                <Icon name="MessageSquare" className="mr-2" size={20} />
-                Telegram
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold px-8">
-                <Icon name="Mail" className="mr-2" size={20} />
-                Email
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <h3 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                ANIME VOICE
+                BEBRADUB
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Профессиональная студия озвучки аниме
+                Студия озвучки аниме
               </p>
             </div>
             <div className="flex gap-4">
@@ -250,7 +197,7 @@ const Index = () => {
             </div>
           </div>
           <div className="text-center text-sm text-muted-foreground mt-8 pt-8 border-t border-border">
-            © 2024 Anime Voice. Все права защищены.
+            © 2024 BebraDub. Все права защищены.
           </div>
         </div>
       </footer>
