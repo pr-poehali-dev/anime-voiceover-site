@@ -171,20 +171,11 @@ const Index = () => {
             </select>
           </div>
 
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid w-full md:w-auto grid-cols-3 bg-card">
-              <TabsTrigger value="all" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                Все проекты
-              </TabsTrigger>
-              <TabsTrigger value="ongoing" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                В работе
-              </TabsTrigger>
-              <TabsTrigger value="completed" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                Завершённые
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value={activeTab} className="mt-8">
+          <div className="w-full">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+              ВСЕ ПРОЕКТЫ
+            </h2>
+            <div className="mt-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredAnime.map((anime) => (
                   <Card 
@@ -232,8 +223,8 @@ const Index = () => {
                   </Card>
                 ))}
               </div>
-            </TabsContent>
-          </Tabs>
+            </div>
+          </div>
         </div>
       </div>
 
