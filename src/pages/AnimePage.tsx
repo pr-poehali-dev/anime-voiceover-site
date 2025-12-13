@@ -25,7 +25,7 @@ const animeDatabase: Record<string, AnimeProject> = {
     year: 2025,
     episodes: 24,
     status: 'completed',
-    trailer: 'dQw4w9WgXcQ'
+    trailer: 'yeRvDchyo44'
   },
   'dandadan': {
     id: 2,
@@ -35,7 +35,7 @@ const animeDatabase: Record<string, AnimeProject> = {
     year: 2024,
     episodes: 24,
     status: 'completed',
-    trailer: 'dQw4w9WgXcQ'
+    trailer: '0XJxfbN36Uw'
   }
 };
 
