@@ -14,6 +14,7 @@ interface AnimeProject {
   episodes: number;
   status: 'completed' | 'ongoing';
   trailer?: string;
+  seasons?: { name: string; episodes: number[] }[];
 }
 
 const animeDatabase: Record<string, AnimeProject> = {
@@ -35,7 +36,11 @@ const animeDatabase: Record<string, AnimeProject> = {
     year: 2024,
     episodes: 24,
     status: 'completed',
-    trailer: '0XJxfbN36Uw'
+    trailer: '0XJxfbN36Uw',
+    seasons: [
+      { name: 'Сезон 1', episodes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+      { name: 'Сезон 2', episodes: [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] }
+    ]
   }
 };
 
@@ -43,6 +48,7 @@ const AnimePage = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [selectedEpisode, setSelectedEpisode] = useState(1);
+  const [selectedSeason, setSelectedSeason] = useState(0);
 
   const anime = id ? animeDatabase[id.toLowerCase()] : null;
 
@@ -54,7 +60,9 @@ const AnimePage = () => {
 
   if (!anime) return null;
 
-  const episodes = Array.from({ length: anime.episodes }, (_, i) => i + 1);
+  const episodes = anime.seasons 
+    ? anime.seasons[selectedSeason].episodes 
+    : Array.from({ length: anime.episodes }, (_, i) => i + 1);
 
   return (
     <div className="min-h-screen bg-background">
@@ -138,6 +146,23 @@ const AnimePage = () => {
           </div>
 
           <div className="space-y-4">
+            {anime.seasons && (
+              <div className="flex gap-2 mb-4">
+                {anime.seasons.map((season, idx) => (
+                  <Button
+                    key={idx}
+                    variant={selectedSeason === idx ? 'default' : 'outline'}
+                    className={selectedSeason === idx ? 'bg-primary text-primary-foreground' : 'border-border hover:border-primary'}
+                    onClick={() => {
+                      setSelectedSeason(idx);
+                      setSelectedEpisode(season.episodes[0]);
+                    }}
+                  >
+                    {season.name}
+                  </Button>
+                ))}
+              </div>
+            )}
             <h3 className="text-xl font-bold">ВЫБЕРИТЕ СЕРИЮ</h3>
             <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-2">
               {episodes.map((ep) => (
