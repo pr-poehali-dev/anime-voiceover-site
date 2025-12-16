@@ -26,7 +26,7 @@ const animeDatabase: Record<string, AnimeProject> = {
     year: 2025,
     episodes: 12,
     status: 'completed',
-    trailer: 'yeRvDchyo44'
+    trailer: 'FSZcbWzilPo'
   },
   'dandadan': {
     id: 2,
@@ -94,11 +94,6 @@ const AnimePage = () => {
                   alt={anime.title}
                   className="w-full h-full object-cover"
                 />
-                {id?.toLowerCase() === 'sanda' && (
-                  <div className="absolute top-0 left-0 right-0 bg-primary/95 text-primary-foreground text-center py-2 px-4 text-sm font-semibold backdrop-blur-sm">
-                    Лицензировано на территории РФ
-                  </div>
-                )}
               </div>
               <div className="text-center md:text-left space-y-2">
                 <h1 className="text-4xl md:text-5xl font-bold">{anime.title}</h1>
