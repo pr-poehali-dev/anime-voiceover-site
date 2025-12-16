@@ -18,13 +18,13 @@ interface AnimeProject {
 }
 
 const animeDatabase: Record<string, AnimeProject> = {
-  'gachiakuta': {
+  'sanda': {
     id: 1,
-    title: 'GACHIAKUTA',
-    image: 'https://cdn.poehali.dev/files/7e03ab3337.jpg',
+    title: 'SANDA',
+    image: 'https://cdn.poehali.dev/files/a63914f718aa4d8bbddd17fbfdcc853f9a9e4185b8404044d5798e7d93e591ca.jpg',
     genre: 'Сёнен, Экшн',
     year: 2025,
-    episodes: 24,
+    episodes: 12,
     status: 'completed',
     trailer: 'yeRvDchyo44'
   },
@@ -94,7 +94,7 @@ const AnimePage = () => {
                   alt={anime.title}
                   className="w-full h-full object-cover"
                 />
-                {id?.toLowerCase() === 'gachiakuta' && (
+                {id?.toLowerCase() === 'sanda' && (
                   <div className="absolute top-0 left-0 right-0 bg-primary/95 text-primary-foreground text-center py-2 px-4 text-sm font-semibold backdrop-blur-sm">
                     Лицензировано на территории РФ
                   </div>

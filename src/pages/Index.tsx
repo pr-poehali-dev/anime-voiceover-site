@@ -22,11 +22,11 @@ interface AnimeProject {
 const animeData: AnimeProject[] = [
   {
     id: 1,
-    title: 'GACHIAKUTA',
-    image: 'https://cdn.poehali.dev/files/7e03ab3337.jpg',
+    title: 'SANDA',
+    image: 'https://cdn.poehali.dev/files/a63914f718aa4d8bbddd17fbfdcc853f9a9e4185b8404044d5798e7d93e591ca.jpg',
     genre: 'Сёнен, Экшн',
     year: 2025,
-    episodes: 24,
+    episodes: 12,
     status: 'completed'
   },
   {
@@ -60,7 +60,7 @@ const Index = () => {
     const titleLower = anime.title.toLowerCase();
     
     const matchesSearch = titleLower.includes(searchLower) || 
-                         (titleLower === 'gachiakuta' && 'гачиакута'.includes(searchLower)) ||
+                         (titleLower === 'sanda' && 'санда'.includes(searchLower)) ||
                          (titleLower === 'dandadan' && 'дандадан'.includes(searchLower));
     
     const matchesGenre = selectedGenre === 'all' || anime.genre === selectedGenre;
