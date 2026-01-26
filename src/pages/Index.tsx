@@ -126,38 +126,45 @@ const Index = () => {
               ВСЕ ПРОЕКТЫ
             </h2>
             <div className="mt-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredAnime.map((anime) => (
-                  <Card 
-                    key={anime.id} 
-                    className="group bg-card border-border overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer"
-                    onClick={() => navigate(`/anime/${anime.title.toLowerCase()}`)}
-                  >
-                    <div className="relative aspect-[2/3] overflow-hidden">
-                      <img
-                        src={anime.image}
-                        alt={anime.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                    <CardContent className="p-4 space-y-2">
-                      <h3 className="font-bold text-lg line-clamp-1 group-hover:text-primary transition-colors">
-                        {anime.title}
-                      </h3>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Badge variant="outline" className="border-primary/50 text-primary text-xs">
-                          {anime.genre}
-                        </Badge>
-                        <span>•</span>
-                        <span>{anime.year}</span>
-                        <span>•</span>
-                        <span>{anime.episodes} эп.</span>
+              {filteredAnime.length === 0 ? (
+                <div className="text-center py-20">
+                  <Icon name="Film" size={64} className="mx-auto mb-4 text-muted-foreground/50" />
+                  <p className="text-xl text-muted-foreground">Проекты скоро появятся...</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredAnime.map((anime) => (
+                    <Card 
+                      key={anime.id} 
+                      className="group bg-card border-border overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer"
+                      onClick={() => navigate(`/anime/${anime.title.toLowerCase()}`)}
+                    >
+                      <div className="relative aspect-[2/3] overflow-hidden">
+                        <img
+                          src={anime.image}
+                          alt={anime.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+                      <CardContent className="p-4 space-y-2">
+                        <h3 className="font-bold text-lg line-clamp-1 group-hover:text-primary transition-colors">
+                          {anime.title}
+                        </h3>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <Badge variant="outline" className="border-primary/50 text-primary text-xs">
+                            {anime.genre}
+                          </Badge>
+                          <span>•</span>
+                          <span>{anime.year}</span>
+                          <span>•</span>
+                          <span>{anime.episodes} эп.</span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
