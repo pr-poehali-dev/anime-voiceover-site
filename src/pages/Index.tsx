@@ -19,26 +19,7 @@ interface AnimeProject {
   progress?: number;
 }
 
-const animeData: AnimeProject[] = [
-  {
-    id: 1,
-    title: 'SANDA',
-    image: 'https://cdn.poehali.dev/files/a63914f718aa4d8bbddd17fbfdcc853f9a9e4185b8404044d5798e7d93e591ca.jpg',
-    genre: 'Сёнен, Экшн',
-    year: 2025,
-    episodes: 12,
-    status: 'completed'
-  },
-  {
-    id: 2,
-    title: 'DanDaDan',
-    image: 'https://cdn.poehali.dev/files/080f3dd04b6ba2190db80d1281e38c6e.jpg',
-    genre: 'Сёнен, Комедия',
-    year: 2024,
-    episodes: 24,
-    status: 'completed'
-  }
-];
+const animeData: AnimeProject[] = [];
 
 const Index = () => {
   const navigate = useNavigate();
